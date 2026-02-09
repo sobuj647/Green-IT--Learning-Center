@@ -12,7 +12,7 @@ const BannerMarquee = () => {
   return (
     <Marquee speed={50} gradient={false}>
       <div className="flex items-center gap-7 text-[#4d4d4d] font-semibold whitespace-nowrap">
-        <span className="ml-7">Tass IT Solutions</span>
+        <span className="ml-7">Green IT & Learning Center</span>
         {/* <span>Providing innovative IT solutions since 2024</span> */}
         <span className="flex items-center gap-2">
           <span>

@@ -1,6 +1,8 @@
 import React from "react";
+import "./Navbar.css";
 import { FaArrowRight } from "react-icons/fa";
 import Logo from "../assets/images/logo.PNG"
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
     return (
@@ -39,30 +41,32 @@ const Navbar = () => {
                   className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow right-0"
                 >
                   <li>
-                    <a href="#">Home</a>
+                    <NavLink>Home</NavLink>
                   </li>
                   <li>
-                    <a href="#">About</a>
+                    <NavLink>About</NavLink>
                   </li>
                   <li>
-                    <a href="#">Services</a>
+                    <NavLink>Programs</NavLink>
                   </li>
                   <li>
-                    <a href="#">Clients</a>
+                    <NavLink>Clients</NavLink>
                   </li>
                   <li>
-                    <a href="#">Blog</a>
+                    <NavLink>Blog</NavLink>
                   </li>
                   <li>
-                    <a href="#">Contact</a>
+                    <NavLink>Contact</NavLink>
                   </li>
                   <li>
-                    <button className="btn-1 btn w-45 ">
-                      <span className="pr-8">
-                        <FaArrowRight />
-                      </span>
-                      Order Now
-                    </button>
+                    <NavLink>
+                      <button className="btn-1 btn w-45 ">
+                        <span className="pr-8">
+                          <FaArrowRight />
+                        </span>
+                        Order Now
+                      </button>
+                    </NavLink>
                   </li>
                 </ul>
               </div>
@@ -70,18 +74,20 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex space-x-10 text-[#000000e6]">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-            <button className="btn-1 btn w-45 ">
-              <span className="pr-8">
-                <FaArrowRight />
-              </span>
-              Order Now
-            </button>
+            <NavLink to="/Home">Home</NavLink>
+            <NavLink to="/Programs">Programs</NavLink>
+            <NavLink to="/Clients">Clients</NavLink>
+            <NavLink to="/Blog">Blog</NavLink>
+            <NavLink to="/About">About</NavLink>
+            <NavLink to="/Contact">Contact</NavLink>
+            <NavLink>
+              <button className="btn-1 btn w-45 ">
+                <span className="pr-8">
+                  <FaArrowRight />
+                </span>
+                Order Now
+              </button>
+            </NavLink>
           </div>
         </div>
       </nav>

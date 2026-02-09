@@ -15,7 +15,7 @@ const Banner = () => {
               <span className="bg-[#0404be] rounded-2xl">
                 <GoDotFill />
               </span>
-              We have been there since 2024
+              We have been there since 2020
             </span>
           </p>
           <p className="text-[45px] py-3 font-semibold leading-[1.1] my-3">
@@ -23,8 +23,9 @@ const Banner = () => {
             <span>Digital Progress</span>
           </p>
           <p className="text-black">
-            TASS IT SOLUTIONS LTD is a leading IT solutions provider and one of
-            the most dynamic technology companies in Bangladesh.
+            Green IT & Learning Center is a trusted digital learning institute
+            in Bangladesh, <br /> helping students build strong IT skills for a better
+            future.
           </p>
         </div>
         <div className="mt-10">
@@ -32,7 +33,7 @@ const Banner = () => {
             <span className="pr-6 text-white">
               <FaArrowRight />
             </span>
-            Get started
+            Enroll Now
           </button>
           <button className="btn-1 btn w-40 ml-[50px] ">
             <span className="">
@@ -47,7 +48,7 @@ const Banner = () => {
       </div>
       <div>
         <img
-          className="w-[900px] rounded-lg"
+          className="w-[900px] h-[420px] rounded-lg"
           src={BannerImage}
           alt="....Loading"
         />

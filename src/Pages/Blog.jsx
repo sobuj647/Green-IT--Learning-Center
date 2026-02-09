@@ -1,7 +1,15 @@
 import React from "react";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 const Blog = () => {
     return (
-        <div>Blog Page</div>
+      <section className="w-11/12 mx-auto">
+        <Navbar></Navbar>
+        <div className="h-[500px] flex justify-center items-center">
+          <h1>Blog Page</h1>
+        </div>
+        <Footer></Footer>
+      </section>
     );
 };
 
